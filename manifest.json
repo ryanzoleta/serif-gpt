@@ -1,14 +1,13 @@
 {
   "manifest_version": 3,
   "name": "SerifGPT",
-  "description": "Make ChatGPT look more like a certain other chatbot",
+  "description": "Make ChatGPT look more like a certain other chatbot.",
   "version": "1.0",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": ["https://chatgpt.com/*", "https://*.chatgpt.com/"],
-      "css": ["styles.css"],
-      "js": ["content.js"]
+      "css": ["styles.css"]
     }
   ],
   "action": {
@@ -20,5 +19,11 @@
       "resources": ["fonts/*"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }

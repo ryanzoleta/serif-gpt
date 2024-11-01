@@ -2,19 +2,67 @@
 <html>
   <head>
     <style>
-      body {
-        width: 200px;
-        padding: 10px;
+      * {
+        box-sizing: border-box;
+        margin: 0;
       }
-      button {
-        width: 100%;
-        margin: 5px 0;
-        padding: 8px;
+
+      body {
+        width: 400px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 20px;
+        background-color: #2e2d2b;
+        color: white;
+        font-size: 16px;
+      }
+
+      .header {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .subheading {
+        font-size: 16px;
+      }
+
+      .warning {
+        border-radius: 10px;
+        border: 1px solid #f59e0b;
+        background-color: #fde68a;
+        padding: 5px;
+        color: #92400e;
+        font-size: 16px;
+      }
+
+      .container {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
       }
     </style>
   </head>
   <body>
-    <button id="toggleStyles">Toggle Styles</button>
-    <script src="popup.js"></script>
+    <div class="container">
+      <div>
+        <h1 class="header">SerifGPT</h1>
+        <p class="subheading">Make ChatGPT look more like a certain other chatbot</p>
+      </div>
+
+      <div class="warning">
+        <p><strong>Warning</strong></p>
+        <p>Currently only works properly in dark mode.</p>
+      </div>
+
+      <div class="container">
+        <p>Enjoyed this? Why not,</p>
+        <a href="https://www.buymeacoffee.com/ryanarnold" target="_blank"
+          ><img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            style="height: 54px !important; width: 196px !important"
+        /></a>
+      </div>
+      <p>v0.1</p>
+    </div>
   </body>
 </html>
