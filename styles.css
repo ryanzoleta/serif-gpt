@@ -1,9 +1,21 @@
-* {
-  font-family: Garamo, serif !important;
+@font-face {
+  font-family: 'Besley';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Besley.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/PTSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 nav {
   background-color: #22211d !important;
+  border-right: 1px solid #474642 !important;
+  font-family: 'Besley', Verdana !important;
 }
 
 ol > li > div > a > div > div {
@@ -11,21 +23,81 @@ ol > li > div > a > div > div {
 }
 
 .prose {
-  border: 1px solid #6c6a60 !important;
+  border: 1px solid #3b3a37 !important;
   border-radius: 20px !important;
-  background-color: rgba(57, 57, 55);
-  padding-left: 14px;
-  padding-right: 14px;
+  background-color: #31312e !important;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-top: 14px;
-  font-size: 20px !important;
+  font-size: 16px !important;
+  color: rgb(245, 244, 239) !important;
+  font-family: 'Besley', Verdana !important;
 }
 
 .composer-parent {
-  background-color: #292826 !important;
+  background-color: #2e2d2b !important;
 }
 
 [data-message-author-role='user'] > div > div {
   background-color: #1e191c !important;
-  border-radius: 20px !important;
-  font-size: 20px !important;
+  border-radius: 10px !important;
+  font-size: 16px !important;
+  font-family: 'PTSans', sans-serif !important;
+}
+
+pre > div {
+  border: none !important;
+}
+
+pre > div > div:nth-child(1) {
+  background-color: #21201d !important;
+  font-size: 14px !important;
+  font-family: monospace !important;
+}
+
+pre > div > div:nth-child(3) {
+  background-color: rgb(40, 44, 52) !important;
+  font-size: 14px !important;
+}
+
+.hljs {
+  font-family: monospace !important;
+}
+
+form > div > div > div {
+  background-color: rgb(57, 57, 55) !important;
+  border: 1px solid #474642 !important;
+}
+
+.h-header-height {
+  background-color: #2e2d2b !important;
+}
+
+.bg-token-sidebar-surface-primary {
+  background-color: #22211d !important;
+}
+
+.bg-token-sidebar-surface-secondary:hover {
+  background-color: #1a1915 !important;
+}
+
+[data-testid='model-switcher-dropdown-button'],
+[data-testid='share-chat-button'],
+h1,
+.text-token-text-secondary {
+  font-family: 'Besley', Verdana !important;
+}
+
+.font-sans,
+textarea,
+[contenteditable='true'] {
+  font-family: 'PTSans', sans-serif !important;
+}
+
+.prose > h3 {
+  font-size: 16px !important;
+}
+
+[data-testid='create-new-chat-button'] {
+  color: rgb(182, 97, 60) !important;
 }
