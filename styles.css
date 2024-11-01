@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'Domine';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Domine.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'PTSans';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/PTSans.woff') format('woff');
   font-weight: normal;
@@ -15,7 +22,7 @@
 nav {
   background-color: #22211d !important;
   border-right: 1px solid #474642 !important;
-  font-family: 'Besley', Verdana !important;
+  font-family: 'Domine', Verdana !important;
 }
 
 ol > li > div > a > div > div {
@@ -29,9 +36,10 @@ ol > li > div > a > div > div {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 14px;
+  padding-bottom: 12px;
   font-size: 16px !important;
   color: rgb(245, 244, 239) !important;
-  font-family: 'Besley', Verdana !important;
+  font-family: 'Domine', Verdana !important;
 }
 
 .composer-parent {
@@ -62,6 +70,21 @@ pre > div > div:nth-child(3) {
 
 .hljs {
   font-family: monospace !important;
+  color: rgb(171, 178, 191) !important;
+}
+
+.hljs-keyword,
+.hljs-built_in {
+  color: rgb(198, 120, 221) !important;
+}
+
+.hljs-title {
+  color: rgb(209, 154, 102) !important;
+}
+
+.hljs-type,
+.hljs-attr {
+  color: rgb(97, 175, 239) !important;
 }
 
 form > div > div > div {
@@ -85,7 +108,7 @@ form > div > div > div {
 [data-testid='share-chat-button'],
 h1,
 .text-token-text-secondary {
-  font-family: 'Besley', Verdana !important;
+  font-family: 'Domine', Verdana !important;
 }
 
 .font-sans,
