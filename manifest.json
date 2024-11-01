@@ -3,7 +3,6 @@
   "name": "SerifGPT",
   "description": "Make ChatGPT look more like a certain other chatbot.",
   "version": "1.0",
-  "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": ["https://chatgpt.com/*", "https://*.chatgpt.com/"],
