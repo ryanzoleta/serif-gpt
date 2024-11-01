@@ -1,0 +1,31 @@
+* {
+  font-family: Garamo, serif !important;
+}
+
+nav {
+  background-color: #22211d !important;
+}
+
+ol > li > div > a > div > div {
+  background: none !important;
+}
+
+.prose {
+  border: 1px solid #6c6a60 !important;
+  border-radius: 20px !important;
+  background-color: rgba(57, 57, 55);
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 14px;
+  font-size: 20px !important;
+}
+
+.composer-parent {
+  background-color: #292826 !important;
+}
+
+[data-message-author-role='user'] > div > div {
+  background-color: #1e191c !important;
+  border-radius: 20px !important;
+  font-size: 20px !important;
+}
